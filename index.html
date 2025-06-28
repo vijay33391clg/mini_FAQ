@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="design.css">
+    <script type = "text/javascript" src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineHub - Movie Categories</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> CINEHUB</h1>
+            <p>Discover Movies by Category - Your Ultimate Entertainment Guide</p>
+        </div>
+
+        <div class="categories-nav">
+            <button class="category-btn active" onclick="showCategory('overview')">Overview</button>
+            <button class="category-btn" onclick="showCategory('action')">Action</button>
+            <button class="category-btn" onclick="showCategory('thriller')">Thriller</button>
+            <button class="category-btn" onclick="showCategory('comedy')">Comedy</button>
+            <button class="category-btn" onclick="showCategory('horror')">Horror</button>
+            
+        </div>
+
+        <div class="content-area">
+            <!-- Overview Section -->
+            <div id="overview" class="category-section active">
+                <div class="category-header">
+                    <img src="D:\mini\images\homepage\movie_home.png" alt="Cinema Overview" class="category-image"> <!-- add the images-->
+                    <div class="category-info">
+                        <h2 class="category-title">Movie Overview</h2>
+                        <p class="category-description">
+                            Welcome to CineHub! Explore our vast collection of movies across different category. 
+                        </p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <div class="stat-number">10K+</div>
+                                <div class="stat-label">Movies</div>
+                            </div>
+                            
+                            <div class="stat-item">
+                                <div class="stat-number">4.8</div>
+                                <div class="stat-label">Rating</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="questions-container">
+                    <h3 class="questions-title">Frequently Asked Questions</h3>
+                    <div class="question-item">
+                        <div class="question-header" onclick="toggleAnswer(this)">
+                            <span class="question-text">How do I browse movies by category?</span>
+                            <span class="question-icon">+</span>
+                        </div>
+                        <div class="question-answer">
+                            <p>Simply click on any category button above to explore movies in that genre. Each category has curated collections and recommendations.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-header" onclick="toggleAnswer(this)">
+                            <span class="question-text">Are there new movies added regularly?</span>
+                            <span class="question-icon">+</span>
+                        </div>
+                        <div class="question-answer">
+                            <p>Yes! We update our collection weekly with the latest releases and classic films across all genres.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-header" onclick="toggleAnswer(this)">
+                            <span class="question-text">Can I get personalized recommendations?</span>
+                            <span class="question-icon">+</span>
+                        </div>
+                        <div class="question-answer">
+                            <p>NO. it is Upcomming feature by intergration personalized recommendations Engine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Section -->
+            <div id="action" class="category-section">
+                <div class="category-header">
+                    <img src="D:\mini\images\action\home.png" alt="Action Movies" class="category-image"> <!-- add action moves-->
+                    <div class="category-info">
+                        <h2 class="category-title">Action Movies</h2>
+                        <p class="category-description">
+                            Watch exciting action movies full of cool fights, big explosions, and fun adventures!
+
+                        </p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <div class="stat-number">2.5K+</div>
+                                <div class="stat-label">Movies</div>
+                            </div>
+                            
+                            <div class="stat-item">
+                                <div class="stat-number">4.7</div>
+                                <div class="stat-label">Avg Rating</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+             
+
+                <div class="questions-container">
+                    <h3 class="questions-title">Action Movies FAQ</h3>
+                    <div class="question-item">
+                        <div class="question-header" onclick="toggleAnswer(this)">
+                            <span class="question-text">Which action movies have the best fight scenes or stunts?</span>
+                            <span class="question-icon">+</span>
+                        </div>
+                        <div class="question-answer">
+                            <p> John Wick Series,The Raid 1 & 2,Die Hard Series.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-header" onclick="toggleAnswer(this)">
+                            <span class="question-text">Are there classic action movies available?</span>
+                            <span class="question-icon">+</span>
+                        </div>
+                        <div class="question-answer">
+                            <p>Yes! Our collection includes both modern blockbusters and classic action films from the 80s, 90s, and 2000s.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thriller Section -->
+            <div id="thriller" class="category-section">
+                <div class="category-header">
+                    <img src="D:\mini\images\triller\home.png" alt="Thriller Movies" class="category-image"> <!-- add images-->
+                    <div class="category-info">
+                        <h2 class="category-title">Thriller Movies</h2>
+                        <p class="category-description">
+                            Watch thrilling movies full of mystery, suspense, and surprising twists that keep you hooked till the end.
+                        </p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <div class="stat-number">1.8K+</div>
+                                <div class="stat-label">Movies</div>
+                            </div>
+                            
+                            <div class="stat-item">
+                                <div class="stat-number">4.6</div>
+                                <div class="stat-label">Avg Rating</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="questions-container">
+                    <h3 class="questions-title">Thriller Movies FAQ</h3>
+                    <div class="question-item">
+                        <div class="question-header" onclick="toggleAnswer(this)">
+                            <span class="question-text">What's the difference between thriller and horror?</span> 
+                            <span class="question-icon">+</span>
+                        </div>
+                        <div class="question-answer">
+                            <p>Thrillers focus on suspense and psychological tension, while horror aims to frighten and shock. Thrillers rely more on plot twists and mind games.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-header" onclick="toggleAnswer(this)">
+                            <span class="question-text">Do you have international thriller films?</span>
+                            <span class="question-icon">+</span>
+                        </div>
+                        <div class="question-answer">
+                            <p>Absolutely! We feature acclaimed thrillers from around the world, including Korean, French, British, and Scandinavian films.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comedy Section -->
+            <div id="comedy" class="category-section">
+                <div class="category-header">
+                    <img src="D:\mini\images\comedy\home.png" alt="Comedy Movies" class="category-image"> <!-- add the images-->
+                    <div class="category-info">
+                        <h2 class="category-title">Comedy Movies</h2>
+                        <p class="category-description">
+                            Enjoy funny movies that will make you laugh with jokes, silly moments, and lots of fun!.
+                        </p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <div class="stat-number">2.2K+</div>
+                                <div class="stat-label">Movies</div>
+                            </div>
+                          
+                            <div class="stat-item">
+                                <div class="stat-number">4.5</div>
+                                <div class="stat-label">Avg Rating</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="questions-container">
+                    <h3 class="questions-title">Comedy Movies FAQ</h3>
+                    <div class="question-item">
+                        <div class="question-header" onclick="toggleAnswer(this)">
+                            <span class="question-text">What types of comedy do you offer?</span>
+                            <span class="question-icon">+</span>
+                        </div>
+                        <div class="question-answer">
+                            <p>We offer romantic comedies, action comedies, dark comedies, parodies, slapstick, and family-friendly comedies for all ages.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-header" onclick="toggleAnswer(this)">
+                            <span class="question-text">Are there comedy specials available?</span>
+                            <span class="question-icon">+</span>
+                        </div>
+                        <div class="question-answer">
+                            <p>Get ready for scary movies full of ghosts, creepy moments, and shocking surprises!.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horror Section -->
+            <div id="horror" class="category-section">
+                <div class="category-header">
+                    <img src="images\hornner\home.png" alt="Horror Movies" class="category-image"> <!-- add imagse-->
+                    <div class="category-info">
+                        <h2 class="category-title">Horror Movies</h2>
+                        <p class="category-description">
+                            Dare to be scared with our bone-chilling collection of horror films! 
+                            From supernatural frights to psychological horror, slasher films to 
+                            paranormal activities, prepare for sleepless nights.
+                        </p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <div class="stat-number">1.5K+</div>
+                                <div class="stat-label">Movies</div>
+                            </div>
+                           
+                            <div class="stat-item">
+                                <div class="stat-number">4.3</div>
+                                <div class="stat-label">Scare Rating</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="questions-container">
+                    <h3 class="questions-title">Horror Movies FAQ</h3>
+                    <div class="question-item">
+                        <div class="question-header" onclick="toggleAnswer(this)">
+                            <span class="question-text">Are there different types of horror?</span>
+                            <span class="question-icon">+</span>
+                        </div>
+                        <div class="question-answer">
+                            <p>Yes! We categorize horror into supernatural, psychological, slasher, monster, zombie, and paranormal subgenres to help you find your preferred scare style.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-header" onclick="toggleAnswer(this)">
+                            <span class="question-text">Do you have classic horror films?</span>
+                            <span class="question-icon">+</span>
+                        </div>
+                        <div class="question-answer">
+                            <p>Absolutely! Our collection includes timeless classics from Universal monsters to modern masterpieces of terror.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+
+            </div>
+        </div>
+    </div>
+</body>
+
+    
